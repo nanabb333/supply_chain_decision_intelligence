@@ -4,7 +4,7 @@
 
 An independent business analytics project examining how retail demand forecasting, inventory policies, and operating assumptions influence service–cost tradeoffs.
 
-**Project status:** Completed local research; documentation-only portfolio candidate. Not yet published.
+**Project status:** Completed research; documentation maintained in a private GitHub repository. Not publicly released.
 
 ## Business Problem
 
