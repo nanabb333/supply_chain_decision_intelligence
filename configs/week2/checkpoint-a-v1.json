@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "anchor": "2011-01-29",
+  "last_observed_day": 1913,
+  "horizon": 28,
+  "origins": [
+    1801,
+    1829,
+    1857,
+    1885
+  ],
+  "roles": [
+    "development",
+    "development",
+    "development",
+    "holdout"
+  ],
+  "train_start": 1,
+  "min_history": 365,
+  "cohort": "fixed_archive_frame",
+  "seed": "week2-a-v1",
+  "price_reporting_lag_days": 7,
+  "primary_metric": "macro_MAE",
+  "holdout_release": "separate authorization plus frozen model/config/prediction hashes",
+  "training_snapshot_stride": 28
+}

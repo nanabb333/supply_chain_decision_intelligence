@@ -18,7 +18,15 @@ Public availability does not establish permission to redistribute data or derive
 
 Access to data, analysis of data, redistribution of raw/processed data, and publication of derived figures, reports or numerical summaries are separate questions. Their applicable conditions remain unresolved for the intended public portfolio use. Omitting raw data does not itself establish permission to publish derived findings. This document does not assert either legal clearance or a confirmed violation.
 
-The current candidate includes only two Markdown documents. It contains no dataset, derived image, report PDF, code, notebook, dashboard or ledger. Before external publication, the author must resolve applicable terms for the intended derived-result narrative and separately approve the exact payload and publishing action. No LICENSE file or third-party rights grant is supplied.
+This release distributes original project source, synthetic examples and methodological documentation, not competition records. Raw data, processed records, empirical prediction ledgers, figures and PDFs are excluded. The existing qualitative project narrative is retained; this release does not assert a new grant for derived findings. No LICENSE file or third-party rights grant is supplied.
+
+This project is presented for research, educational, and portfolio demonstration purposes. The original M5 competition datasets are not redistributed. Users must obtain the data independently from the official source and comply with the applicable competition terms.
+
+## Official competition and provider
+
+[M5 Forecasting – Accuracy](https://www.kaggle.com/competitions/m5-forecasting-accuracy) used Walmart retail sales data. The M5 competition was organized through the Makridakis forecasting competition initiative at the University of Nicosia with Walmart and Kaggle; see the [University announcement](https://www.unic.ac.cy/el/panepistimio-leykosias-walmart-kai-kaggle-prokiryssoyn-ton-diethni-diagonismo-provlepsis-m5/). The organizers' archive is acquisition provenance, not a replacement license.
+
+The official rules page was checked again on 2026-11-01 but yielded no readable terms. No claim of freely redistributable or open-source data is made. Exact applicable access, use and redistribution terms remain unverified; users must review them at the official source. Synthetic examples are generated from artificial distributions and do not sample or reconstruct competition records. Original analytical code is separate from third-party data and from derived empirical outputs.
 
 ## Attribution and independence
 

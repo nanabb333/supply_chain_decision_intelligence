@@ -1,0 +1,169 @@
+{
+  "scenarios": [
+    {
+      "name": "primary",
+      "lead_days": 3,
+      "review_days": 7,
+      "episode_days": 21,
+      "initial_multiplier": 1.0,
+      "initial_pipeline_units": 0.0,
+      "buffer_days": 3.0,
+      "holding_per_unit_day": 1.0,
+      "shortage_per_unit": 10.0,
+      "ordering_per_order": 0.0,
+      "logic": "lost_sales",
+      "cost_unit": "hypothetical cost units"
+    },
+    {
+      "name": "lead1",
+      "lead_days": 1,
+      "review_days": 7,
+      "episode_days": 21,
+      "initial_multiplier": 1.0,
+      "initial_pipeline_units": 0.0,
+      "buffer_days": 3.0,
+      "holding_per_unit_day": 1.0,
+      "shortage_per_unit": 10.0,
+      "ordering_per_order": 0.0,
+      "logic": "lost_sales",
+      "cost_unit": "hypothetical cost units"
+    },
+    {
+      "name": "lead7",
+      "lead_days": 7,
+      "review_days": 7,
+      "episode_days": 21,
+      "initial_multiplier": 1.0,
+      "initial_pipeline_units": 0.0,
+      "buffer_days": 3.0,
+      "holding_per_unit_day": 1.0,
+      "shortage_per_unit": 10.0,
+      "ordering_per_order": 0.0,
+      "logic": "lost_sales",
+      "cost_unit": "hypothetical cost units"
+    },
+    {
+      "name": "daily_review",
+      "lead_days": 3,
+      "review_days": 1,
+      "episode_days": 21,
+      "initial_multiplier": 1.0,
+      "initial_pipeline_units": 0.0,
+      "buffer_days": 3.0,
+      "holding_per_unit_day": 1.0,
+      "shortage_per_unit": 10.0,
+      "ordering_per_order": 0.0,
+      "logic": "lost_sales",
+      "cost_unit": "hypothetical cost units"
+    },
+    {
+      "name": "empty_start",
+      "lead_days": 3,
+      "review_days": 7,
+      "episode_days": 21,
+      "initial_multiplier": 0,
+      "initial_pipeline_units": 0.0,
+      "buffer_days": 3.0,
+      "holding_per_unit_day": 1.0,
+      "shortage_per_unit": 10.0,
+      "ordering_per_order": 0.0,
+      "logic": "lost_sales",
+      "cost_unit": "hypothetical cost units"
+    },
+    {
+      "name": "double_start",
+      "lead_days": 3,
+      "review_days": 7,
+      "episode_days": 21,
+      "initial_multiplier": 2,
+      "initial_pipeline_units": 0.0,
+      "buffer_days": 3.0,
+      "holding_per_unit_day": 1.0,
+      "shortage_per_unit": 10.0,
+      "ordering_per_order": 0.0,
+      "logic": "lost_sales",
+      "cost_unit": "hypothetical cost units"
+    },
+    {
+      "name": "no_buffer",
+      "lead_days": 3,
+      "review_days": 7,
+      "episode_days": 21,
+      "initial_multiplier": 1.0,
+      "initial_pipeline_units": 0.0,
+      "buffer_days": 0,
+      "holding_per_unit_day": 1.0,
+      "shortage_per_unit": 10.0,
+      "ordering_per_order": 0.0,
+      "logic": "lost_sales",
+      "cost_unit": "hypothetical cost units"
+    },
+    {
+      "name": "buffer7",
+      "lead_days": 3,
+      "review_days": 7,
+      "episode_days": 21,
+      "initial_multiplier": 1.0,
+      "initial_pipeline_units": 0.0,
+      "buffer_days": 7,
+      "holding_per_unit_day": 1.0,
+      "shortage_per_unit": 10.0,
+      "ordering_per_order": 0.0,
+      "logic": "lost_sales",
+      "cost_unit": "hypothetical cost units"
+    },
+    {
+      "name": "penalty50",
+      "lead_days": 3,
+      "review_days": 7,
+      "episode_days": 21,
+      "initial_multiplier": 1.0,
+      "initial_pipeline_units": 0.0,
+      "buffer_days": 3.0,
+      "holding_per_unit_day": 1.0,
+      "shortage_per_unit": 50,
+      "ordering_per_order": 0.0,
+      "logic": "lost_sales",
+      "cost_unit": "hypothetical cost units"
+    }
+  ],
+  "development_origins": [
+    1801,
+    1829,
+    1857
+  ],
+  "episode_days": 21,
+  "forecast_horizon": 28,
+  "simulation_enabled": false,
+  "pilot_execution_authorized": false,
+  "assumption_status": "ACCEPTED_FOR_DESIGN_ONLY",
+  "policies": [
+    {
+      "model": "MA28",
+      "rule": "periodic_order_up_to",
+      "rounding": "ceil_positive_gap",
+      "forecast_updates": false
+    },
+    {
+      "model": "M1",
+      "rule": "periodic_order_up_to",
+      "rounding": "ceil_positive_gap",
+      "forecast_updates": false
+    },
+    {
+      "model": "M3",
+      "rule": "periodic_order_up_to",
+      "rounding": "ceil_positive_gap",
+      "forecast_updates": false
+    }
+  ],
+  "pilot": {
+    "origin": 1801,
+    "series": 128,
+    "episode_days": 21,
+    "scenarios": [
+      "primary"
+    ],
+    "selection": "sha256(item_id|store_id), digest/item/store ascending"
+  }
+}

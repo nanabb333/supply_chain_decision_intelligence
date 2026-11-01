@@ -4,7 +4,7 @@
 
 An independent business analytics project examining how retail demand forecasting, inventory policies, and operating assumptions influence service–cost tradeoffs.
 
-**Project status:** Completed research; documentation maintained in a private GitHub repository. Not publicly released.
+**Project status:** Completed local research; source-code portfolio with a synthetic demonstration. Empirical datasets and evidence assets are not distributed.
 
 ## Business Problem
 
@@ -73,7 +73,7 @@ The project uses historical retail data from the M5 Forecasting Competition.
 
 See [Data Sources and Attribution](DATA_SOURCES_AND_ATTRIBUTION.md) for dataset provenance and rights limitations.
 
-No raw or processed datasets, research figures, model artifacts, or underlying code are included in this proposed documentation-only release.
+Original implementation code and synthetic tests are included. No M5 datasets, empirical figures, PDFs, prediction artifacts or row-level ledgers are distributed.
 
 ## Author Contribution and AI-Assisted Development
 
@@ -83,10 +83,28 @@ OpenAI Codex assisted with implementation, automation, debugging, testing, valid
 
 The project represents independent research direction supported by AI-assisted development. It does not imply that every line of code was manually written or that an external independent audit was performed.
 
+## Installation and Reproducibility
+
+See the [installation, synthetic demo and research execution guide](docs/REPRODUCIBILITY.md). The public synthetic workflow is runnable without M5. The five-view research dashboard source is included but requires excluded evidence files. Full empirical reproduction and fresh-machine installation are not verified.
+
+## Research Questions
+
+- Does forecast accuracy translate into better service–cost tradeoffs?
+- How sensitive are comparisons to operating and opening-inventory assumptions?
+- What limits the generalizability of a selected cohort?
+
+## Repository Map
+
+- `src/supply_chain/`: data pipeline, diagnostics, forecasting and inventory methods.
+- `app/`: original Streamlit application entry points.
+- `tests/`: synthetic regression and dashboard smoke tests.
+- `research_tests/`: evidence-dependent historical acceptance tests, outside default collection.
+- `configs/` and `sql/`: hypothetical scenarios and analytical query definitions.
+- `examples/synthetic/`: fully artificial public demo.
+- `docs/`: methods, reproduction boundaries and release review.
+
 ## Release Scope
 
-This proposed portfolio release contains only the project README and the data attribution document.
+The release contains original code, configuration definitions, tests and explanatory documentation. The existing qualitative findings above describe the accepted local study, not results reproduced by this public checkout. Detailed derived charts, tables and reports are withheld because applicable redistribution permission could not be verified. No new empirical results were calculated.
 
-The research pipeline, dashboard, datasets, figures, PDFs, and simulation outputs remain local.
-
-Public release is pending final rights review and explicit author authorization.
+See [release exclusions and validation](docs/RELEASE_REVIEW.md) and [data attribution](DATA_SOURCES_AND_ATTRIBUTION.md). Third-party dependencies retain their own licenses; no blanket license for M5 data or third-party material is granted.

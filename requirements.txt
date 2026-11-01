@@ -1,0 +1,12 @@
+# Direct dependencies; install the local package separately with --no-deps.
+# These ranges are not a universal lockfile. See docs/REPRODUCIBILITY.md.
+numpy>=1.26,<3
+pandas>=2.2,<4
+duckdb>=1.1,<2
+pyarrow>=17
+streamlit>=1.50,<2
+plotly>=5.24,<8
+psutil==7.2.2
+threadpoolctl>=3,<4
+pytest>=8,<10
+setuptools>=68

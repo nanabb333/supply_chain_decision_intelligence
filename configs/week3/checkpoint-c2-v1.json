@@ -1,0 +1,32 @@
+{
+  "origin": 1801,
+  "series": 128,
+  "episode_days": 21,
+  "forecast_horizon": 28,
+  "models": [
+    "MA28",
+    "M1",
+    "M3"
+  ],
+  "scenario": {
+    "name": "primary",
+    "lead_days": 3,
+    "review_days": 7,
+    "episode_days": 21,
+    "initial_multiplier": 1.0,
+    "initial_pipeline_units": 0.0,
+    "buffer_days": 3.0,
+    "holding_per_unit_day": 1.0,
+    "shortage_per_unit": 10.0,
+    "ordering_per_order": 0.0,
+    "logic": "lost_sales",
+    "cost_unit": "hypothetical cost units"
+  },
+  "max_attempts": 1,
+  "runtime_seconds": 60,
+  "memory_gate_bytes": 1073741824,
+  "hard_stop_bytes": 2147483648,
+  "demand_role": "recorded_sales_proxy",
+  "rolling_forecasts": false,
+  "population_enabled": false
+}

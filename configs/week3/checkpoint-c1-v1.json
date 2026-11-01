@@ -1,0 +1,24 @@
+{
+  "checkpoint": "C1",
+  "synthetic_execution_enabled": true,
+  "empirical_pilot_enabled": false,
+  "population_execution_enabled": false,
+  "pilot_origin": 1801,
+  "pilot_series": 128,
+  "pilot_episode_days": 21,
+  "pilot_models": [
+    "MA28",
+    "M1",
+    "M3"
+  ],
+  "pilot_scenarios": [
+    "primary"
+  ],
+  "runtime_gate_seconds": 60,
+  "memory_gate_bytes": 1073741824,
+  "hard_memory_stop_bytes": 2147483648,
+  "rss_poll_seconds": 0.01,
+  "resource_limit_semantics": "Sampled process watchdog, not instantaneous OS memory ceiling",
+  "accepted_B_config_sha256": "f0a88073739b801c3066c22c03a6ca5a77945a903a5f94f86706251572ec41f7",
+  "frozen_pilot_ids_sha256": "554447484ff4d94052e95bd966565b3b4ab2ad428dc062fa8dcc0a588d7839fa"
+}

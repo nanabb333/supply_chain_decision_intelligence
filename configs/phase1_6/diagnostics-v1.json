@@ -1,0 +1,20 @@
+{
+  "root": "../..",
+  "raw_directory": "data/raw/m5-organizers-2026-10-13",
+  "processed_directory": "data/processed/m5-real-v1",
+  "duckdb_path": "data/processed/m5-real-v1/analytics.duckdb",
+  "analytical_output": "reports/phase1_6/run-v1",
+  "report_output": "reports/phase1_6/research-v1",
+  "scenarios": [
+    {"name": "baseline", "window": "full"},
+    {"name": "last365", "window": "last365"},
+    {"name": "positive_span", "window": "positive_span"},
+    {"name": "priced_days", "window": "priced_days"},
+    {"name": "abc75_90", "window": "full", "thresholds": {"a": 0.75, "b": 0.90}},
+    {"name": "abc85_98", "window": "full", "thresholds": {"a": 0.85, "b": 0.98}},
+    {"name": "cv04_08", "window": "full", "thresholds": {"x": 0.4, "y": 0.8}},
+    {"name": "cv06_12", "window": "full", "thresholds": {"x": 0.6, "y": 1.2}},
+    {"name": "adi1_20", "window": "full", "thresholds": {"intermittent": 1.2}},
+    {"name": "adi1_50", "window": "full", "thresholds": {"intermittent": 1.5}}
+  ]
+}
